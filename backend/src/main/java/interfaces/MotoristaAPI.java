@@ -27,7 +27,7 @@ public class MotoristaAPI {
     @PutMapping("/motoristas/{id}}")
     public Motorista atualizacaoMotorista(@PathVariable("id") Long id,
                                           @RequestBody Motorista motorista) {
-        Motorista motoristaEncontrado =   encontrarMotorista(id);
+        Motorista motoristaEncontrado = encontrarMotorista(id);
         motoristaEncontrado.setDataNascimento(motorista.getDataNascimento());
         motoristaEncontrado.setNome(motorista.getNome());
         return motoristaRepository.save(motoristaEncontrado);

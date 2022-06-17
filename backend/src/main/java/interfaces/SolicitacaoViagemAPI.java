@@ -15,6 +15,5 @@ public class SolicitacaoViagemAPI {
 
     @PostMapping
     public void  fazerPedidoViagem(@RequestBody SolicitacaoViagem solicitacaoViagem) {
-
     }
 }

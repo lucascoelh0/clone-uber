@@ -13,5 +13,4 @@ public class Passageiro {
     @GeneratedValue
     Long id;
     String nome;
-
 }
